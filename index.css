@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Raleway:wght@300&display=swap");
+
+/**** Normalización de estilos ****/
 
 * {
   margin: 0;
@@ -9,6 +11,12 @@
 html {
   font-size: 62.5%;
   font-family: "Raleway", sans-serif;
+}
+
+main {
+  background-color: #ffffff;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 a {
@@ -31,8 +39,11 @@ p {
 header,
 footer {
   background: #30343f;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
+/**** Estilos header ****/
 header {
   height: 144px;
   display: flex;
@@ -57,14 +68,13 @@ header {
   line-height: normal;
 }
 
-.seccion-nuevos-ingresos {
-  height: 888px;
-}
+/**** Estilos sección nuevos ingresos ****/
 
 /* AGREGAR DIFUMINADO */
 .cont-banner {
   height: 388px;
   background-image: url(/assets/funkos-banner.webp);
+  background-repeat: no-repeat;
   background-position: center -400px;
   background-size: cover;
   color: #fff;
@@ -86,7 +96,67 @@ header {
   border-radius: 50px;
   border: none;
   color: #111;
+  font-family: "Inter", sans-serif;
   font-size: 2em;
   font-weight: 500;
   margin-top: 35px;
+}
+
+/**** Estilos sección colecciones ****/
+
+.seccion-colecciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.articulo-seccion-colecciones {
+  display: flex;
+  align-items: center;
+  width: 1220px;
+  height: 600px;
+  margin-top: 68px;
+}
+
+.articulo-detalle {
+  width: 645px;
+  height: 297px;
+}
+
+.articulo-detalle-titulo {
+  font-size: 4.6em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.articulo-detalle-descripcion {
+  width: 458px;
+  margin-top: 6px;
+  color: #4f4f4f;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+hr {
+  margin-top: 30px;
+}
+
+.btn-ver-coleccion {
+  margin-top: 34px;
+  width: 291.809px;
+  height: 65px;
+  border-radius: 50px;
+  background: #30343f;
+  color: #fff;
+  font-size: 2.4em;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+.cont-img-articulo {
+  width: 600px;
+  height: 600px;
+}
+.img-articulo {
+  width: 100%;
 }

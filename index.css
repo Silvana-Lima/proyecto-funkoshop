@@ -25,6 +25,7 @@ ol {
 
 p {
   font-size: 1.8em;
+  font-weight: 400;
 }
 
 header,
@@ -50,4 +51,42 @@ header {
 .list-nav-header {
   display: flex;
   gap: 49px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.seccion-nuevos-ingresos {
+  height: 888px;
+}
+
+/* AGREGAR DIFUMINADO */
+.cont-banner {
+  height: 388px;
+  background-image: url(/assets/funkos-banner.webp);
+  background-position: center -400px;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 105px;
+}
+
+.titulo-nuevos-ingresos {
+  font-size: 3.8em;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.link-shop {
+  width: 211px;
+  height: 47px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  border: none;
+  color: #111;
+  font-size: 2em;
+  font-weight: 500;
+  margin-top: 35px;
 }

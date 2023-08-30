@@ -69,9 +69,15 @@ header {
   display: flex;
   gap: 49px;
   color: #fff;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
+}
+
+.select-nav-header {
+  background-color: #30343f;
+  color: #fff;
+  font-size: 2em;
+  border: none;
+  font-weight: normal;
 }
 
 /**** Estilos sección Nuevos ingresos ****/

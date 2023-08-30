@@ -43,7 +43,13 @@ footer {
   margin: 0 auto;
 }
 
+.titulo-seccion {
+  font-size: 4.6em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 /**** Estilos header ****/
+
 header {
   height: 144px;
   display: flex;
@@ -68,7 +74,7 @@ header {
   line-height: normal;
 }
 
-/**** Estilos sección nuevos ingresos ****/
+/**** Estilos sección Nuevos ingresos ****/
 
 /* AGREGAR DIFUMINADO */
 .cont-banner {
@@ -102,7 +108,7 @@ header {
   margin-top: 35px;
 }
 
-/**** Estilos sección colecciones ****/
+/**** Estilos sección Colecciones ****/
 
 .seccion-colecciones {
   display: flex;
@@ -159,4 +165,66 @@ hr {
 }
 .img-articulo {
   width: 100%;
+}
+
+/**** Estilos sección Últimos lanzamientos ****/
+.seccion-ultimos-lanzamientos {
+  width: 1220px;
+  height: 623px;
+  margin: 0 auto;
+}
+
+.lista-ultimos-lanzamientos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-producto {
+  width: 359.966px;
+  height: 512px;
+  margin-top: 57px;
+}
+
+.cont-img-card-producto {
+  width: 359.966px;
+  height: 352px;
+}
+
+.img-card-producto {
+  width: 100%;
+}
+
+.subtitulo-card-producto {
+  width: 109.422px;
+  color: var(--gray-1, #333);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.titulo-card-producto {
+  width: 267.93px;
+  color: #111;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 13px;
+}
+
+.precio-card-producto {
+  width: 141.123px;
+  width: 88.969px;
+  color: #333;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 13px;
+}
+
+.cuotas-card-producto {
+  color: #1d84b5;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 13px;
 }

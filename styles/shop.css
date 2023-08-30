@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-shop {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 68px 0;
+}
+/**** Estilos Aside ****/
+
+.aside-shop {
+  width: 243.04px;
+  height: 493.928px;
+}
+
+.form-filtros-shop {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.filtros-shop-titulo {
+  font-family: "Inter";
+  font-size: 2.4em;
+  font-weight: 500;
+}
+
+.input-filtros-shop {
+  width: 243.034px;
+  height: 44.285px;
+  padding: 2px;
+  border-radius: 6px;
+  border: 2px solid #30343f;
+  color: #b9b9b9;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.input-filtros-shop::placeholder,
+.input-precio-filtros-shop::placeholder {
+  padding: 2px;
+  color: #b9b9b9;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.input-precio-filtros-shop::placeholder {
+  text-align: center;
+}
+
+.label-precio-filtros-shop {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.input-precio-filtros-shop {
+  width: 59.143px;
+  height: 27.519px;
+  border-radius: 6px;
+  border: 2px solid #30343f;
+  margin: 0 10px;
+}
+
+.checkbox-filtros-shop {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  border-radius: 6px;
+  border: 2px solid #30343f;
+}
+
+.label-checkbox-filtros-shop {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.cont-checkbox-filtros-shop {
+  display: flex;
+  gap: 5px;
+}
+
+/**** Estilos Main ****/
+
+.main-shop {
+  margin: 0;
+  width: 960.025px;
+  height: 1608px;
+}
+
+.lista-productos-shop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card-producto-shop {
+  width: 304px;
+}

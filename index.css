@@ -228,3 +228,41 @@ hr {
   font-weight: 700;
   margin-top: 13px;
 }
+
+/**** Estilos Footer ****/
+
+footer {
+  margin-top: 68px;
+  height: 343px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cont-nav-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 124px;
+}
+
+.nav-footer {
+  margin-left: 110px;
+}
+
+.list-nav-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 7.5px;
+}
+
+.logo-funkoshop-footer {
+  margin-right: 110px;
+  width: 143px;
+}
+
+.copy-footer {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 56px;
+}

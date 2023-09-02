@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap");
+
+/**** Normalización de estilos ****/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
+}
+
+main {
+  background-color: #ffffff;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+p {
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+header,
+footer {
+  background: #30343f;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.titulo-seccion {
+  font-size: 4.6em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/**** Estilos header ****/
+
+header {
+  height: 144px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  padding-left: 110px;
+}
+
+.nav-header {
+  padding-right: 110px;
+}
+
+.list-nav-header {
+  display: flex;
+  gap: 49px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.select-nav-header {
+  background-color: #30343f;
+  color: #fff;
+  font-size: 2em;
+  border: none;
+  font-weight: normal;
+}
+
+/**** Estilos sección Nuevos ingresos ****/
+
+/* AGREGAR DIFUMINADO */
+.cont-banner {
+  height: 388px;
+  background-image: url(/assets/funkos-banner.webp);
+  background-repeat: no-repeat;
+  background-position: center -400px;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 105px;
+}
+
+.titulo-nuevos-ingresos {
+  font-size: 3.8em;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.link-shop {
+  width: 211px;
+  height: 47px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  border: none;
+  color: #111;
+  font-family: "Inter", sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  margin-top: 35px;
+}
+
+/**** Estilos sección Colecciones ****/
+
+.seccion-colecciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.articulo-seccion-colecciones {
+  display: flex;
+  align-items: center;
+  width: 1220px;
+  height: 600px;
+  margin-top: 68px;
+}
+
+.articulo-detalle {
+  width: 645px;
+  height: 297px;
+}
+
+.articulo-detalle-titulo {
+  font-size: 4.6em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.articulo-detalle-descripcion {
+  width: 458px;
+  margin-top: 6px;
+  color: #4f4f4f;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.linea-divisoria {
+  margin-top: 30px;
+}
+
+.btn-ver-coleccion {
+  margin-top: 34px;
+  width: 291.809px;
+  height: 65px;
+  border-radius: 50px;
+  background: #30343f;
+  color: #fff;
+  font-size: 2.4em;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+.cont-img-articulo {
+  width: 600px;
+  height: 600px;
+}
+.img-articulo {
+  width: 100%;
+}
+
+/**** Estilos sección Últimos lanzamientos ****/
+.seccion-ultimos-lanzamientos {
+  width: 1220px;
+  height: 623px;
+  margin: 0 auto;
+}
+
+.lista-ultimos-lanzamientos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-producto {
+  width: 359.966px;
+  height: 512px;
+  margin-top: 57px;
+}
+
+.cont-img-card-producto {
+  width: 359.966px;
+  height: 352px;
+}
+
+.img-card-producto {
+  width: 100%;
+}
+
+.subtitulo-card-producto {
+  width: 109.422px;
+  color: var(--gray-1, #333);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.titulo-card-producto {
+  width: 267.93px;
+  color: #111;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 13px;
+}
+
+.precio-card-producto {
+  width: 141.123px;
+  width: 88.969px;
+  color: #333;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 13px;
+}
+
+.cuotas-card-producto {
+  color: #1d84b5;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 13px;
+}
+
+/**** Estilos Footer ****/
+
+footer {
+  margin-top: 68px;
+  height: 343px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cont-nav-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 124px;
+}
+
+.nav-footer {
+  margin-left: 110px;
+}
+
+.list-nav-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 7.5px;
+}
+
+.logo-funkoshop-footer {
+  margin-right: 110px;
+  width: 143px;
+}
+
+.copy-footer {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 56px;
+}

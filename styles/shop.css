@@ -41,9 +41,13 @@
   font-weight: 500;
 }
 
+.input-filtros-shop:focus {
+  color: #212b36;
+}
+
 .input-filtros-shop::placeholder,
 .input-precio-filtros-shop::placeholder {
-  padding: 2px;
+  padding: 5px;
   color: #b9b9b9;
   font-family: Inter;
   font-size: 20px;
@@ -66,6 +70,11 @@
   border-radius: 6px;
   border: 2px solid #30343f;
   margin: 0 10px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
 }
 
 .checkbox-filtros-shop {
@@ -103,4 +112,35 @@
 
 .card-producto-shop {
   width: 304px;
+}
+
+.paginado {
+  margin-top: 68px;
+}
+
+.lista-paginado {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.item-lista-paginado {
+  width: 36px;
+  height: 34px;
+  border-radius: 4px;
+  border: 1px solid #dfe3e8;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--dark-grey-400, #212b36);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.item-lista-paginado:active {
+  border-color: #ff3333;
+  color: #ff3333;
 }

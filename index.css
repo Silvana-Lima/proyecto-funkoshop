@@ -49,6 +49,10 @@ footer {
   font-weight: 700;
   text-transform: uppercase;
 }
+
+.body-home {
+  margin: 0;
+}
 /**** Estilos header ****/
 
 header {

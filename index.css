@@ -119,6 +119,11 @@ header {
   margin-top: 35px;
 }
 
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
 /**** Estilos sección Colecciones ****/
 
 .seccion-colecciones {
@@ -130,7 +135,6 @@ header {
 .articulo-seccion-colecciones {
   display: flex;
   align-items: center;
-  width: 1220px;
   height: 600px;
   margin-top: 68px;
 }
@@ -180,7 +184,6 @@ header {
 
 /**** Estilos sección Últimos lanzamientos ****/
 .seccion-ultimos-lanzamientos {
-  width: 1220px;
   height: 623px;
   margin: 0 auto;
 }

@@ -7,7 +7,7 @@
 .body-shop {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
   padding: 68px 0;
 }
 /**** Estilos Aside ****/

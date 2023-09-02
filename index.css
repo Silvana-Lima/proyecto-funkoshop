@@ -246,6 +246,7 @@ header {
   width: 359.966px;
   height: 512px;
   margin-top: 57px;
+  overflow: hidden;
 }
 
 .cont-img-card-producto {
@@ -258,7 +259,6 @@ header {
 }
 
 .subtitulo-card-producto {
-  width: 109.422px;
   color: var(--gray-1, #333);
   font-family: var(--base-font);
   font-size: var(--font-xsmall);
@@ -266,7 +266,6 @@ header {
 }
 
 .titulo-card-producto {
-  width: 267.93px;
   color: var(--dark-bg-solid);
   font-family: var(--base-font);
   font-size: var(--font-medium);
@@ -275,8 +274,6 @@ header {
 }
 
 .precio-card-producto {
-  width: 141.123px;
-  width: 88.969px;
   color: var(--dark-bg-solid);
   font-family: var(--base-font);
   font-size: var(--font-small);

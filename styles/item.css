@@ -1,3 +1,5 @@
+/**** Estilos Sección Item ****/
+
 .article-card-item {
   display: flex;
   align-items: center;
@@ -71,4 +73,10 @@
 .link-pagos-item {
   font-size: var(--font-xSmall);
   color: var(--secondary-solid);
+}
+
+/**** Estilos Sección Productos relacionados ****/
+
+.section-productos-relacionados {
+  margin-bottom: var(--spacing-128);
 }

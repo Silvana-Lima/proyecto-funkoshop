@@ -37,7 +37,7 @@
   --font-large: 24px;
   --font-medium: 18px;
   --font-small: 16px;
-  --font-xsmall: 14px;
+  --font-xSmall: 14px;
 
   /*** Espacios ***/
 
@@ -59,9 +59,8 @@
 }
 
 html {
-  font-family: var(--alternative-font);
+  font-family: var(--base-font);
   font-size: 62.5%;
-  color: var(--light-font-solid);
 }
 
 main {
@@ -148,6 +147,7 @@ header {
   display: flex;
   align-items: center;
   padding-left: 105px;
+  color: var(--light-font-solid);
 }
 
 .titulo-nuevos-ingresos {
@@ -327,4 +327,5 @@ footer {
   font-size: 20px;
   font-weight: 500;
   margin-top: 56px;
+  color: var(--light-font-solid);
 }

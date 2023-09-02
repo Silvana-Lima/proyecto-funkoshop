@@ -55,10 +55,6 @@
   font-weight: 500;
 }
 
-.input-precio-filtros-shop::placeholder {
-  text-align: center;
-}
-
 .label-precio-filtros-shop {
   font-family: var(--base-font);
   font-size: var(--font-small);
@@ -77,6 +73,7 @@
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0em;
+  text-align: center;
 }
 
 .checkbox-filtros-shop {

@@ -1,0 +1,74 @@
+.article-card-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-68);
+  color: var(--dark-900);
+}
+
+.subtitulo-item {
+  font-size: var(--font-small);
+  margin-bottom: 11px;
+}
+
+.titulo-item {
+  font-size: var(--font-jumbo);
+  color: var(--dark-solid);
+}
+
+.descripcion-item {
+  font-size: var(--font-large);
+  margin: 15.81px 0;
+}
+
+.precio-item {
+  font-size: var(--font-jumbo);
+  margin: 15.81px 0px 27.82px 0px;
+}
+
+.contenedor-agregar-item {
+  display: flex;
+  margin-bottom: 26.88px;
+}
+
+.cont-cantidad {
+  display: flex;
+}
+
+.span-cantidad-item {
+  border: 1px solid var(--dark-900);
+  font-size: var(--font-large);
+  color: var(--dark-500);
+  width: 105px;
+  height: 35px;
+  margin-right: 8.79px;
+  text-align: center;
+}
+
+.cont-botones-cantidad {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 29.33px;
+}
+
+.button-sumar-item,
+.button-restar-item {
+  background-color: var(--dark-500);
+  color: var(--light-font-solid);
+  border: none;
+  width: 18px;
+  height: 16px;
+  padding: 4px;
+}
+.button-agregar-item {
+  font-size: var(--font-medium);
+  background-color: var(--primary-900);
+  color: var(--light-font-solid);
+  border: none;
+  padding: 7.95px 15px;
+}
+
+.link-pagos-item {
+  font-size: var(--font-xSmall);
+  color: var(--secondary-solid);
+}

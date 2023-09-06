@@ -1,0 +1,144 @@
+.main-carrito {
+  margin-top: var(--spacing-128);
+}
+
+.cont-subtitulo-carrito {
+  display: flex;
+  align-items: center;
+  height: 51px;
+  margin-top: var(--spacing-68);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgba(250, 250, 255, 1);
+}
+
+.subtitulo-carrito {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.subtitulo-carrito-detalle {
+  margin-left: 130px;
+}
+
+.subtitulo-carrito-cantidad {
+  margin-left: 296px;
+}
+
+.subtitulo-carrito-total {
+  margin-left: 221px;
+}
+
+.card-carrito {
+  height: 195px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  border-radius: 25px;
+  padding: 16px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgba(250, 250, 255, 1);
+}
+
+.cont-detalle-producto {
+  width: 410px;
+  height: 118px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.figure-img-detalle-producto {
+  width: 118.76px;
+  height: 118px;
+}
+
+.img-detalle-producto {
+  width: 100%;
+}
+
+.titulo-detalle-producto {
+  font-size: var(--font-medium);
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.subtitulo-detalle-producto {
+  font-size: var(--font-xSmall);
+  font-weight: 500;
+}
+
+.precio-detalle-producto {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.cont-cantidad-producto {
+  width: 113.48px;
+  height: 40px;
+  display: flex;
+  gap: 6px;
+}
+
+.span-cantidad-carrito {
+  width: 89.47875213623047px;
+  height: 40px;
+  border: 0.5px solid rgba(201, 201, 201, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.cont-button-cantidad {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button-carrito {
+  width: 18px;
+  height: 18px;
+  font-size: 16px;
+  background-color: var(--primary-solid);
+  color: var(--light-font-solid);
+  border: none;
+}
+
+.precio-card-producto {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.titulo-seccion-resumen {
+  margin-top: var(--spacing-68);
+}
+
+.cont-resumen {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.cont-detalle-resumen {
+  width: 572px;
+  height: 197px;
+  padding: 24px;
+  margin-top: 26px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgba(250, 250, 255, 1);
+}
+
+.cont-item-resumen {
+  display: flex;
+  justify-content: space-between;
+}

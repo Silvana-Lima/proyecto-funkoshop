@@ -4,80 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../styles/carrito.css">
     <title>Carrito - Funkoshop</title>
 </head>
 
 <body>
-    <main>
-        <h2>CARRITO DE COMPRAS</h2>
-        <div>
-            <h3>DETALLE DE PRODUCTO</h3>
-            <h3>CANTIDAD</h3>
-            <h3>TOTAL</h3>
+    <main class="container main-carrito">
+        <h2 class="titulo-seccion">CARRITO DE COMPRAS</h2>
+        <div class="container cont-subtitulo-carrito">
+            <h3 class="subtitulo-carrito subtitulo-carrito-detalle">DETALLE DE PRODUCTO</h3>
+            <h3 class="subtitulo-carrito subtitulo-carrito-cantidad">CANTIDAD</h3>
+            <h3 class="subtitulo-carrito subtitulo-carrito-total">TOTAL</h3>
+            <p></p>
         </div>
-        <article>
-            <div>
-                <img src="../assets/star-wars/baby-yoda-1.webp" alt="Baby Yoda">
+        <article class="card-carrito">
+            <div class="cont-detalle-producto">
+                <figure class="figure-img-detalle-producto">
+                    <img src="../assets/star-wars/baby-yoda-1.webp" class="img-detalle-producto" alt="Baby Yoda">
+                </figure>
                 <div>
-                    <h4>BABY YODA BLUEBALL</h4>
-                    <p>STAR WARS</p>
-                    <p>Precio: $1799.99</p>
+                    <h4 class="titulo-detalle-producto">BABY YODA BLUEBALL</h4>
+                    <p class="subtitulo-detalle-producto">STAR WARS</p>
+                    <p class="precio-detalle-producto">Precio: $1799.99</p>
                 </div>
             </div>
-            <div>
+            <div class="cont-cantidad-producto">
                 <span class="span-cantidad-carrito">2</span>
-                <div>
-                    <button class="button-sumar-carrito">+</button>
-                    <button class="button-restar-carrito">-</button>
+                <div class="cont-button-cantidad">
+                    <button class="button-carrito button-sumar-carrito">+</button>
+                    <button class="button-carrito button-restar-carrito">-</button>
                 </div>
             </div>
             <div>
-                <p>$3599.98</p>
+                <p class="precio-card-producto">$3599.98</p>
             </div>
             <div>
-                <p>x</p>
+                <img src="../assets/icons/gg_close-o.svg" alt="">
             </div>
         </article>
-        <article>
-            <div>
-                <img src="../assets/pokemon/pidgeotto-1.webp" alt="Pidgeotto">
+        <article class="card-carrito">
+            <div class="cont-detalle-producto">
+                <figure class="figure-img-detalle-producto">
+                    <img src="../assets/pokemon/pidgeotto-1.webp" class="img-detalle-producto" alt="Pidgeotto">
+                </figure>
                 <div>
-                    <h4>PIDGEOTTO</h4>
-                    <p>POKEMON</p>
-                    <p>Precio: $1799.99</p>
+                    <h4 class="titulo-detalle-producto">PIDGEOTTO</h4>
+                    <p class="subtitulo-detalle-producto">POKEMON</p>
+                    <p class="precio-detalle-producto">Precio: $1799.99</p>
                 </div>
             </div>
-            <div>
+            <div class="cont-cantidad-producto">
                 <span class="span-cantidad-carrito">1</span>
-                <div>
-                    <button class="button-sumar-carrito">+</button>
-                    <button class="button-restar-carrito">-</button>
+                <div class="cont-button-cantidad">
+                    <button class="button-carrito button-sumar-carrito">+</button>
+                    <button class="button-carrito button-restar-carrito">-</button>
                 </div>
             </div>
             <div>
-                <p>$1799.99</p>
+                <p class="precio-card-producto">$1799.99</p>
             </div>
             <div>
-                <p>x</p>
+                <img src="../assets/icons/gg_close-o.svg" alt="">
             </div>
         </article>
-        <div>
-            <h2>RESUMEN</h2>
-            <div>
-                <p>CANTIDAD DE ELEMENTOS</p>
-                <p>3</p>
-            </div>
-            <div>
-                <p>SUBTOTAL</p>
-                <p>$5399.97</p>
-            </div>
-            <div>
-                <p>ENVIO</p>
-                <p>$0.00</p>
-            </div>
-            <div>
-                <p>TOTAL</p>
-                <p>$5399.97</p>
+        <div class="cont-resumen">
+            <h2 class="titulo-seccion titulo-seccion-resumen">RESUMEN</h2>
+            <div class="cont-detalle-resumen">
+                <div class="cont-item-resumen">
+                    <p>CANTIDAD DE ELEMENTOS</p>
+                    <p>3</p>
+                </div>
+                <div class="cont-item-resumen">
+                    <p>SUBTOTAL</p>
+                    <p>$5399.97</p>
+                </div>
+                <div class="cont-item-resumen">
+                    <p>ENVIO</p>
+                    <p>$0.00</p>
+                </div>
+                <div class="cont-item-resumen">
+                    <p>TOTAL</p>
+                    <p>$5399.97</p>
+                </div>
             </div>
             <a href="">IR A PAGAR</a>
         </div>

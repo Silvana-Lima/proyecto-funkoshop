@@ -2,6 +2,8 @@
   margin-top: var(--spacing-128);
 }
 
+/**** Estilos Carrito de compras ****/
+
 .cont-subtitulo-carrito {
   display: flex;
   align-items: center;
@@ -114,8 +116,11 @@
   font-weight: 400;
 }
 
+/**** Estilos Resumen ****/
+
 .titulo-seccion-resumen {
   margin-top: var(--spacing-68);
+  border-bottom: 5px solid var(--primary-solid);
 }
 
 .cont-resumen {
@@ -141,4 +146,40 @@
 .cont-item-resumen {
   display: flex;
   justify-content: space-between;
+}
+
+.subtitulo-resumen {
+  font-size: var(--font-small);
+  font-weight: 600;
+}
+
+.linea-divisoria {
+  margin: 0;
+}
+
+.subtitulo-resumen-total {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.valores-resumen {
+  font-size: var(--font-small);
+  font-weight: 700;
+  color: rgba(116, 116, 116, 1);
+}
+
+.valor-resumen-total {
+  font-size: 20px;
+}
+
+.link-pago {
+  width: 572px;
+  height: 68.65px;
+  margin-top: 44px;
+  background-color: var(--primary-solid);
+  text-align: center;
+  padding: 14.83px;
+  font-size: 32px;
+  font-weight: 700px;
+  margin-bottom: 142px;
 }

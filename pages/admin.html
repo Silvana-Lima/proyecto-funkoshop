@@ -4,15 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../styles/admin.css">
     <title>Admin - Funkoshop</title>
 </head>
 
 <body>
+    <header>
+        <picture><a href="/index.html">
+                <img src="../assets/branding/logo_light_horizontal.svg" alt="Logo Funkoshop" class="logo" />
+            </a></picture>
+
+        <nav class="nav-header">
+            <ul class="list-nav-header">
+                <li><a href="">VER TIENDA</a></li>
+                <li><a href="">ADMIN</a></li>
+                <li><a href="">SALIR</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section>
-            <form action="">
-                <button><img src="../assets/icons/search_icon.svg" alt=""></button>
-                <input type="text" name="" id="">
+            <form action="" class="form-buscar-producto">
+                <figure class=""><img src="../assets/icons/search_icon.svg" alt="Ícono de búsqueda"></figure>
+                <input type="text" name="" id="" class="input input-buscar-producto"
+                    placeholder="Código, nombre o categoria">
             </form>
         </section>
         <section>
@@ -173,6 +189,22 @@
 
         </section>
     </main>
+    <footer>
+        <div class="cont-nav-footer">
+            <nav class="nav-footer">
+
+                <ul class="list-nav-footer">
+                    <li><a href="../pages/shop.html">SHOP</a></li>
+                    <li><a href="../pages/register.html">REGISTRARSE</a></li>
+                    <li><a href="../pages/login.html">INGRESAR</a></li>
+                    <li><a href="">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <img src="../assets/branding/isotype.svg" alt="logo-funkoshop" class="logo-funkoshop-footer" />
+        </div>
+
+        <p class="copy-footer">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
 
 </body>
 

@@ -46,15 +46,6 @@
   color: var(--dark-solid);
 }
 
-.input-filtros-shop::placeholder,
-.input-precio-filtros-shop::placeholder {
-  padding: 5px;
-  color: #b9b9b9;
-  font-family: Inter;
-  font-size: 20px;
-  font-weight: 500;
-}
-
 .label-precio-filtros-shop {
   font-family: var(--base-font);
   font-size: var(--font-small);

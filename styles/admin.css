@@ -1,0 +1,13 @@
+.form-buscar-producto {
+  display: flex;
+  width: 590.88px;
+  height: 44.28px;
+  gap: 10px;
+  margin: 36px 0 37px 110px;
+}
+
+.input-buscar-producto {
+  width: 529.7647094726562px;
+  border-radius: 6px;
+  border: 2px solid var(--dark-solid);
+}

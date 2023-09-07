@@ -104,9 +104,11 @@
 }
 
 .lista-productos-shop {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 24px;
+  margin-left: 15px;
 }
 
 .card-producto-shop {

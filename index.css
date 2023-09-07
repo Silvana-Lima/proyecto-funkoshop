@@ -65,8 +65,9 @@ html {
 
 main {
   background-color: var(--light-bg-solid);
-  max-width: 1440px;
-  margin: 0 auto;
+  color: var(--dark-solid);
+  max-width: 1220px;
+  margin: 36px auto;
 }
 
 a {
@@ -107,7 +108,6 @@ footer {
 }
 
 .titulo-seccion {
-  color: var(--dark-bg-solid);
   font-size: var(--font-display);
   font-weight: 700;
   text-transform: uppercase;

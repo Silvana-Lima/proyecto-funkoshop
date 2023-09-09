@@ -38,7 +38,7 @@
 
 .cont-titulos-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+  grid-template-columns: 0.5fr 1fr 2fr 1fr 1fr;
   font-size: var(--font-large);
   font: 700;
   margin: 24px 0 32px 0;
@@ -46,7 +46,7 @@
 
 .cont-articulo {
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+  grid-template-columns: 0.5fr 1fr 2fr 1fr 1fr;
   font-size: var(--font-large);
   font: 500;
   margin: 15px 0;

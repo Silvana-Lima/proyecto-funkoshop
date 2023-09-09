@@ -4,6 +4,11 @@
 
 /**** Estilos Carrito de compras ****/
 
+.titulo-carrito {
+  width: 528px;
+  border-bottom: 5px solid var(--primary-solid);
+}
+
 .cont-subtitulo-carrito {
   display: flex;
   align-items: center;
@@ -89,6 +94,7 @@
   width: 89.47875213623047px;
   height: 40px;
   border: 0.5px solid rgba(201, 201, 201, 1);
+  background-color: var(--light-bg-solid);
   display: flex;
   align-items: center;
   justify-content: center;

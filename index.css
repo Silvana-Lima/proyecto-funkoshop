@@ -18,11 +18,12 @@
   --dark-solid: rgba(31, 31, 31, 1);
   --dark-900: rgba(31, 31, 31, 0.9);
   --dark-500: rgba(31, 31, 31, 0.5);
-  --dark-300: rgba(31, 31, 31, 0.3);
+  --dark-300: rgba(65, 65, 65, 0.3);
 
   --dark-bg-solid: rgba(48, 52, 63, 1);
   --light-bg-solid: rgba(255, 255, 255, 1);
   --light-font-solid: #ffffff;
+  --light-placeholder: #b9b9b9;
 
   /*** Tipografía ***/
 
@@ -66,8 +67,8 @@ html {
 main {
   background-color: var(--light-bg-solid);
   color: var(--dark-solid);
-  max-width: 1220px;
-  margin: 36px auto;
+  max-width: 1440px;
+  margin: 0px auto;
 }
 
 a {
@@ -92,12 +93,31 @@ p {
   font-weight: 400;
 }
 
-.input::placeholder {
-  color: #b9b9b9;
+input::placeholder,
+textarea::placeholder {
+  color: var(--light-placeholder);
   font-family: Inter;
   font-size: 20px;
   font-weight: 500;
   padding: 23px 10px;
+}
+
+.select-form,
+.input-filtros-shop {
+  width: 243.034px;
+  height: 44.285px;
+  padding: 2px;
+  border-radius: 6px;
+  border: 2px solid var(--dark-bg-solid);
+  color: #b9b9b9;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.select-form:focus,
+.input-filtros-shop:focus {
+  color: var(--dark-solid);
 }
 
 header,

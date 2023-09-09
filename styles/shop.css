@@ -31,19 +31,7 @@
 }
 
 .input-filtros-shop {
-  width: 243.034px;
-  height: 44.285px;
-  padding: 2px;
-  border-radius: 6px;
-  border: 2px solid var(--dark-bg-solid);
   color: #b9b9b9;
-  font-family: Inter;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.input-filtros-shop:focus {
-  color: var(--dark-solid);
 }
 
 .label-precio-filtros-shop {

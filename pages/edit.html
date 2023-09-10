@@ -4,75 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../styles/create.css">
+    <link rel="stylesheet" href="../styles/edit.css">
     <title>Edit - Funkoshop</title>
 </head>
 
 <body>
-    <main>
-        <h2>EDITAR ITEM</h2>
-        <form action="">
-            <div>
-                <label for="categoria">Categoria</label>
-                <select name="categoria" id="">
-                    <option value="">Seleccionar</option>
-                    <option value="figuras" selected>Figuras</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                </select>
-                <label for="licencia">Licencia</label>
-                <select name="licencia" id="">
-                    <option value="">Seleccionar</option>
-                    <option value="naruto-shippuden" selected>Naruto Shippuden</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                </select>
-            </div>
-            <div>
-                <label for="nombre-producto">Nombre del producto:</label>
-                <input type="text" name="nombre-producto" id="" placeholder="Kakashi Hatake Shippuden Saga">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Descripción del producto"></textarea>
-            <div>
-                <label for="sku">SKU:</label>
-                <input type="text" name="sku" id="" placeholder="SSK111AB001">
-                <label for="precio">Precio:</label>
-                <input type="number" name="precio" placeholder="$0.000,00">
-                <label for="stock">Stock:</label>
-                <input type="number" name="stock" placeholder="0">
-            </div>
-            <div>
-                <label for="descuento">Descuento:</label>
-                <input type="number" name="descuento" id="" placeholder="0%">
-                <label for="cuotas">Cuotas</label>
-                <select name="cuotas" id="">
-                    <option value="">3 Cuotas sin interés</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                </select>
+    <main class="create-main">
+        <h2 class="titulo-seccion">EDITAR ITEM</h2>
+        <form action="" class="create-form">
+            <form action="" class="create-form">
+                <div class="cont-categ-licencia">
+                    <div>
+                        <label for="categoria" class="form-label">Categoria</label>
+                        <select name="categoria" id="" class="select-form">
+                            <option value="">Seleccionar</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="licencia" class="form-label">Licencia</label>
+                        <select name="licencia" id="" class="select-form">
+                            <option value="">Seleccionar</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
 
-            </div>
-            <div>
-                <label for="imagenes">Imágenes</label>
-                <input type="file" name="imagenes" id="">
-            </div>
-            <div class="cont-img-cargada">
-                <div class="img-cargada-frente">
-                    <img src="../assets/harry-potter/hermione-1.webp" alt="">
-                    <p>Frente</p>
+                    </div>
                 </div>
-                <div class="img-cargada-dorso">
-                    <img src="../assets/harry-potter/hermione-1.webp" alt="">
-                    <p>Dorso</p>
+                <div>
+                    <label for="nombre-producto" class="form-label">Nombre del producto:</label>
+                    <input type="text" name="nombre-producto" id="" class="form-input"
+                        placeholder="Kakashi Hatake Shippuden Saga">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Descripción del producto"></textarea>
+                <div class="cont-sku-precio-stock">
+                    <label for="sku" class="form-label">SKU:</label>
+                    <input type="text" name="sku" id="" class="form-input" placeholder="SSK111AB001">
+                    <label for="precio" class="form-label">Precio:</label>
+                    <input type="number" name="precio" class="form-input" placeholder="$0.000,00">
+                    <label for="stock" class="form-label">Stock:</label>
+                    <input type="number" name="stock" class="input-stock" placeholder="0">
+                </div>
+                <div class="cont-desc-cuotas">
+                    <label for="descuento" class="form-label">Descuento:</label>
+                    <input type="number" name="descuento" id="" class="form-input input-desc" placeholder="0%">
+                    <label for="cuotas" class="form-label">Cuotas</label>
+                    <select name="cuotas" id="" class="select-form">
+                        <option value="">3 Cuotas sin interés</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+
+                </div>
+                <div>
+                    <label for="imagenes" class="form-label">Imágenes:</label>
+                    <input type="file" name="imagenes" id="" class="input-imagenes">
+                </div>
+                <div class="cont-img-cargada">
+                    <div class="cont-img-cargada-frente">
+                        <figure class="cont-img">
+                            <img src="../assets/pokemon/charmander-1.webp" alt="">
+                        </figure>
+                        <p>Frente</p>
+                    </div>
+                    <div class="cont-img-cargada-dorso">
+                        <figure class="cont-img">
+                            <img src="../assets/pokemon/charmander-box.webp" alt="">
+                        </figure>
+                        <p>Dorso</p>
+                    </div>
+
                 </div>
 
-            </div>
+                <div>
+                    <button class="btn-form">Modificar Producto</button>
 
-            <div>
-                <button>Modificar Producto</button>
+                </div>
 
-            </div>
-
-        </form>
+            </form>
     </main>
 
 </body>

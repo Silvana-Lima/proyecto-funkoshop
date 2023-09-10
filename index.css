@@ -67,8 +67,8 @@ html {
 main {
   background-color: var(--light-bg-solid);
   color: var(--dark-solid);
-  max-width: 1440px;
-  margin: 0px auto;
+  max-width: 1220px;
+  margin: 36px auto;
 }
 
 a {
@@ -171,6 +171,11 @@ header {
 /**** Estilos sección Nuevos ingresos ****/
 
 /* AGREGAR DIFUMINADO */
+
+.main-home {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .cont-banner {
   height: 388px;
   background-image: url(/assets/funkos-banner.webp);
@@ -198,11 +203,6 @@ header {
   font-size: 2em;
   font-weight: 500;
   margin-top: 35px;
-}
-
-.container {
-  max-width: 1220px;
-  margin: 0 auto;
 }
 
 /**** Estilos sección Colecciones ****/

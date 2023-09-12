@@ -40,8 +40,36 @@
   margin-left: 8.98px;
 }
 
-.link-restablecer-pass {
+.link-form {
   font-size: var(--font-xSmall);
   font-weight: 400;
   color: rgba(29, 132, 181, 1);
+}
+
+/**** Estilos page Register ****/
+
+.main-register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-register {
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: 36px;
+}
+
+.acepto-condiciones,
+.link-form-acepto-cond {
+  font-size: var(--font-medium);
+}
+
+.form-registro {
+  width: 457px;
+  margin: 36px auto;
+  font-size: var(--font-large);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }

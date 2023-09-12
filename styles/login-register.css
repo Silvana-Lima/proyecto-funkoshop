@@ -1,0 +1,47 @@
+.main-login {
+  width: 515px;
+  height: 289.13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-login {
+  font-size: 42px;
+}
+
+.form-login-register {
+  width: 382px;
+  margin: 27px auto;
+  font-size: var(--font-large);
+}
+
+.cont-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cont-checkbox {
+  width: 150px;
+}
+
+.cont-submit {
+  display: flex;
+  align-items: center;
+}
+
+.btn-form {
+  width: 108px;
+}
+
+.recordarme {
+  font-size: var(--font-medium);
+  font-weight: 400;
+  margin-left: 8.98px;
+}
+
+.link-restablecer-pass {
+  font-size: var(--font-xSmall);
+  font-weight: 400;
+  color: rgba(29, 132, 181, 1);
+}

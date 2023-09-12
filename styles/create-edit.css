@@ -1,9 +1,6 @@
-.create-main {
-  max-width: 1220px;
-  margin: 36px auto;
-}
+/**** Estilos comptartidos en pages: Create y Edit ****/
 
-.create-form {
+.form-item {
   font-size: var(--font-large);
   width: 827.632080078125px;
   height: 669.29833984375px;
@@ -15,10 +12,8 @@
   justify-content: space-between;
 }
 
-select {
-  width: 243px;
-  height: 44px;
-  border-radius: 6px;
+.form-label {
+  margin-right: 20px;
 }
 
 .form-input,
@@ -55,10 +50,6 @@ textarea::placeholder {
   margin-right: 34px;
 }
 
-.form-label {
-  margin-right: 20px;
-}
-
 .input-stock,
 .input-desc {
   width: 55px;
@@ -73,4 +64,29 @@ textarea::placeholder {
 
 .select-form {
   color: #b9b9b9;
+}
+
+/*** Estilos page Edit ***/
+
+.cont-img-cargada {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.cont-img-cargada-frente,
+.cont-img-cargada-dorso {
+  width: 150px;
+  height: 173px;
+  text-align: center;
+}
+
+.cont-img {
+  width: 150px;
+  height: 150px;
+  border-bottom: 2px solid var(--primary-solid);
+}
+
+img {
+  width: 100%;
 }

@@ -232,16 +232,32 @@ header {
   max-width: 1440px;
   margin: 0 auto;
 }
-.cont-banner {
+.banner {
   height: 388px;
   background-image: url(/assets/funkos-banner.webp);
-  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center -400px;
   background-size: cover;
   display: flex;
   align-items: center;
   padding-left: 105px;
   color: var(--light-font-solid);
+  position: relative;
+}
+
+.banner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(2px) brightness(0.9);
+}
+
+.cont-nuevos-ingresos {
+  position: relative;
 }
 
 .titulo-nuevos-ingresos {
@@ -259,6 +275,10 @@ header {
   font-size: 2em;
   font-weight: 500;
   margin-top: 35px;
+}
+
+.link-shop:hover {
+  background-color: var(--primary-solid);
 }
 
 /**** Estilos sección Colecciones ****/

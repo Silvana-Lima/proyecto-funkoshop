@@ -352,7 +352,6 @@ header {
 /**** Estilos Footer ****/
 
 footer {
-  margin-top: 68px;
   height: 343px;
   display: flex;
   flex-direction: column;

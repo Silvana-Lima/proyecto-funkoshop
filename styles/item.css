@@ -74,9 +74,3 @@
   font-size: var(--font-xSmall);
   color: var(--secondary-solid);
 }
-
-/**** Estilos Sección Productos relacionados ****/
-
-.section-productos-relacionados {
-  margin-bottom: var(--spacing-128);
-}

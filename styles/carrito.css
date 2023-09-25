@@ -1,5 +1,9 @@
 /**** Estilos Carrito de compras ****/
 
+.main-carrito {
+  margin: 128px auto;
+}
+
 .titulo-carrito {
   width: 528px;
   border-bottom: 5px solid var(--primary-solid);
@@ -183,5 +187,4 @@
   padding: 14.83px;
   font-size: 32px;
   font-weight: 700px;
-  margin-bottom: 142px;
 }

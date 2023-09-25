@@ -73,7 +73,6 @@ main {
 
 a {
   text-decoration: none;
-  font-size: 2em;
   font-weight: 500;
   color: var(--light-font-solid);
 }
@@ -137,6 +136,11 @@ footer {
   margin: 0;
 }
 
+.whit-icon {
+  display: flex;
+  align-items: center;
+}
+
 /*** Estilos compartidos para paginas del Administrador***/
 
 .form-label {
@@ -187,12 +191,37 @@ header {
   font-weight: 500;
 }
 
-.select-nav-header {
+.nav-header-link {
+  font-size: var(--font-medium);
+  padding: 8px 16px;
+  display: inline-block;
+  transition: background 0.3s ease-in-out;
+  position: relative;
+}
+
+.nav-header-link:hover {
+  background-color: var(--primary-900);
+}
+
+.whit-submenu:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
   background-color: var(--dark-bg-solid);
-  color: var(--light-font-solid);
-  font-size: 2em;
-  border: none;
-  font-weight: normal;
+}
+
+.submenu-item {
+  display: block;
+  padding: 8px 16px;
+  font-size: var(--font-medium);
+}
+
+.submenu-item:hover {
+  background-color: var(--primary-900);
+  transition: background 0.3s ease-in-out;
 }
 
 /**** Estilos sección Nuevos ingresos ****/

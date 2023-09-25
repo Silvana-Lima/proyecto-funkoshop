@@ -16,25 +16,25 @@
 
         <nav class="nav-header">
             <ul class="list-nav-header">
-                <li>
-
-                    <select name="select-nav-header" id="select-nav-header" onchange="window.location.href = this.value"
-                        class="select-nav-header">
-                        <option value="../pages/shop.html">SHOP</option>
-                        <option value="../pages/register.html">opcion 2</option>
-                        <option value="../pages/login.html">opcion 3</option>
-                    </select>
-
+                <li class="nav-header-item whit-submenu">
+                    <a href="" class="nav-header-link whit-icon">SHOP <iconify-icon
+                            icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href=""> FUNKOS </a></li>
+                        <li class="submenu-item"><a href=""> REMERAS </a></li>
+                        <li class="submenu-item"><a href=""> LLAVEROS </a></li>
+                    </ul>
                 </li>
-                <li><a href="">CONTACTO</a></li>
-                <li><a href="../pages/login.html">LOGIN</a></li>
-                <li>
-                    <a href="../pages/carrito.html"><img src="../assets/icons/cart-icon.svg"
+                <li class="nav-header-item"><a class="nav-header-link" href="">CONTACTO</a></li>
+                <li class="nav-header-item"><a class="nav-header-link" href="./pages/login.html">LOGIN</a></li>
+                <li class="nav-header-item">
+                    <a class="nav-header-link-cart" href="./pages/carrito.html"><img src="./assets/icons/cart-icon.svg"
                             alt="Icono de carrito de compras" /> </a>
                 </li>
             </ul>
         </nav>
     </header>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 
 </html>

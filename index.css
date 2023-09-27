@@ -211,6 +211,7 @@ header {
   display: none;
   position: absolute;
   background-color: var(--dark-bg-solid);
+  z-index: 5;
 }
 
 .submenu-item {
@@ -236,6 +237,7 @@ header {
   height: 388px;
   background-image: url(/assets/funkos-banner.webp);
   background-attachment: fixed;
+  background-repeat: no-repeat;
   background-position: center -400px;
   background-size: cover;
   display: flex;
@@ -278,7 +280,9 @@ header {
 }
 
 .link-shop:hover {
-  background-color: var(--primary-solid);
+  background-color: var(--primary-900);
+  color: var(--light-font-solid);
+  transition: all 0.3s ease-in-out;
 }
 
 /**** Estilos sección Colecciones ****/
@@ -314,10 +318,8 @@ header {
   color: #4f4f4f;
   font-size: 24px;
   font-weight: 400;
-}
-
-.linea-divisoria {
-  margin-top: 30px;
+  border-bottom: 2px solid var(--primary-solid);
+  padding-bottom: 30px;
 }
 
 .btn-ver-coleccion {
@@ -330,6 +332,11 @@ header {
   font-size: var(--font-large);
   font-weight: 500;
   font-family: var(--base-font);
+  transition: 0.3s ease-in-out;
+}
+
+.btn-ver-coleccion:hover {
+  background-color: var(--primary-solid);
 }
 
 .cont-img-articulo {
@@ -342,7 +349,7 @@ header {
 
 /**** Estilos sección Últimos lanzamientos ****/
 .seccion-ultimos-lanzamientos {
-  height: 623px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -361,10 +368,48 @@ header {
 .cont-img-card-producto {
   width: 359.966px;
   height: 352px;
+  display: flex;
+  position: relative;
+}
+
+.cont-img-card-producto img {
+  animation: fade 0.7s;
+}
+
+.card-producto__tag {
+  font-size: var(--font-xSmall);
+  text-transform: uppercase;
+  background-color: var(--primary-solid);
+  color: var(--light-font-solid);
+  padding: 8px 12px;
+  position: absolute;
+  right: 0;
 }
 
 .img-card-producto {
   width: 100%;
+}
+
+.card-item__img--back {
+  display: none;
+}
+
+.cont-img-card-producto:hover .card-item__img--back {
+  display: block;
+}
+
+.cont-img-card-producto:hover .card-item__img--front {
+  display: none;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .subtitulo-card-producto {

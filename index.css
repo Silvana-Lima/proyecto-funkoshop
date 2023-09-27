@@ -119,13 +119,6 @@ textarea::placeholder {
   color: var(--dark-solid);
 }
 
-header,
-footer {
-  background-color: var(--dark-bg-solid);
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
 .titulo-seccion {
   font-size: var(--font-display);
   font-weight: 700;
@@ -139,6 +132,11 @@ footer {
 .whit-icon {
   display: flex;
   align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /*** Estilos compartidos para paginas del Administrador***/
@@ -171,27 +169,27 @@ footer {
 
 header {
   height: 144px;
+  background-color: var(--dark-bg-solid);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 100%;
+  width: 100%;
 }
 
-.logo {
-  padding-left: 110px;
-}
-
-.nav-header {
-  padding-right: 110px;
-}
-
-.list-nav-header {
+.navbar__menu {
   display: flex;
   gap: 49px;
   color: var(--light-font-solid);
   font-weight: 500;
 }
 
-.nav-header-link {
+.navbar-link {
   font-size: var(--font-medium);
   padding: 8px 16px;
   display: inline-block;
@@ -199,7 +197,7 @@ header {
   position: relative;
 }
 
-.nav-header-link:hover {
+.navbar-link:hover {
   background-color: var(--primary-900);
 }
 
@@ -226,8 +224,6 @@ header {
 }
 
 /**** Estilos sección Nuevos ingresos ****/
-
-/* AGREGAR DIFUMINADO */
 
 .main-home {
   max-width: 1440px;
@@ -445,30 +441,29 @@ header {
 
 /**** Estilos Footer ****/
 
-footer {
-  height: 343px;
+.footer {
+  background-color: var(--dark-bg-solid);
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
+  padding: 68px;
+  margin: 0 auto;
 }
 
-.cont-nav-footer {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 124px;
-}
-
-.nav-footer {
-  margin-left: 110px;
-}
-
-.list-nav-footer {
+.navbar__menu--footer {
+  font-size: var(--font-medium);
   display: flex;
   flex-direction: column;
   gap: 7.5px;
+  width: 100%;
+}
+
+.navbar--footer {
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo-funkoshop-footer {
-  margin-right: 110px;
   width: 143px;
 }
 

@@ -6,6 +6,7 @@
 
 .titulo-carrito {
   width: 528px;
+  margin-bottom: 40px;
   border-bottom: 5px solid var(--primary-solid);
 }
 

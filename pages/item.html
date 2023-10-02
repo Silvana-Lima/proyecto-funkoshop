@@ -27,10 +27,10 @@
                     <p class="precio-item">$ 1799,99</p>
                     <div class="contenedor-agregar-item">
                         <div class="cont-cantidad">
-                            <input type="text" class="span-cantidad-item" />
+                            <input type="text" name="quantity" id="quantity" class="span-cantidad-item" value="0" />
                             <div class="cont-botones-cantidad">
-                                <button class="button-sumar-item">+</button>
-                                <button class="button-restar-item">-</button>
+                                <button id="add" class="button-sumar-item">+</button>
+                                <button id="subtract" class="button-restar-item">-</button>
                             </div>
                         </div>
                         <button class="button-agregar-item">Agregar al carrito</button>
@@ -114,6 +114,7 @@
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="../js/glide.js"></script>
+    <script src="../js/item.js"></script>
     <script src="../app.js"></script>
 </body>
 

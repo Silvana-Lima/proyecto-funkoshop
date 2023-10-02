@@ -7,6 +7,33 @@
   color: var(--dark-900);
 }
 
+.card-item__cont-img {
+  display: flex;
+  position: relative;
+}
+
+.card-item__cont-img img {
+  animation: fade 0.7s;
+}
+
+.card-item__cont-img:hover .card-item__img--back {
+  display: block;
+}
+
+.card-item__cont-img:hover .card-item__img--front {
+  display: none;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .subtitulo-item {
   font-size: var(--font-small);
   margin-bottom: 11px;

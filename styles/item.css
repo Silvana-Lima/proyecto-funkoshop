@@ -1,26 +1,26 @@
 /**** Estilos Sección Item ****/
 
-.article-card-item {
+.card-product {
   display: flex;
   align-items: center;
   gap: var(--spacing-68);
   color: var(--dark-900);
 }
 
-.card-item__cont-img {
+.card-product__cover-img {
   display: flex;
   position: relative;
 }
 
-.card-item__cont-img img {
+.card-product__cover-img img {
   animation: fade 0.7s;
 }
 
-.card-item__cont-img:hover .card-item__img--back {
+.card-product__cover-img:hover .card-item__img--back {
   display: block;
 }
 
-.card-item__cont-img:hover .card-item__img--front {
+.card-product__cover-img:hover .card-item__img--front {
   display: none;
 }
 
@@ -34,22 +34,22 @@
   }
 }
 
-.subtitulo-item {
+.card-product__licence {
   font-size: var(--font-small);
   margin-bottom: 11px;
 }
 
-.titulo-item {
+.card-product__name {
   font-size: var(--font-jumbo);
   color: var(--dark-solid);
 }
 
-.descripcion-item {
+.card-product__description {
   font-size: var(--font-large);
   margin: 15.81px 0;
 }
 
-.precio-item {
+.card-product__price {
   font-size: var(--font-jumbo);
   margin: 15.81px 0px 27.82px 0px;
 }

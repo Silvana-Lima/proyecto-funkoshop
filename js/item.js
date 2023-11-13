@@ -7,7 +7,7 @@ add.addEventListener(
   () => (quantity.value = Number(quantity.value) + 1)
 );
 subtract.addEventListener("click", () => {
-  if (Number(quantity.value) != 0) {
+  if (Number(quantity.value) > 0) {
     quantity.value = Number(quantity.value) - 1;
   }
 });

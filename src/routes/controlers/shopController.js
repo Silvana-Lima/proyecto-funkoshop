@@ -1,4 +1,4 @@
-const shopControlers = {
+const shopControllers = {
   shop: (req, res) => res.send("route for Shop view"),
   item: (req, res) =>
     res.send(
@@ -10,4 +10,4 @@ const shopControlers = {
   checkoutCart: (req, res) => res.send("route for go to checkout page"),
 };
 
-module.exports = shopControlers;
+module.exports = shopControllers;

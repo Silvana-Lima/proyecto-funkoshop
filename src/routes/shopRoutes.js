@@ -1,11 +1,11 @@
 const express = require("express");
 const router = express.Router();
-const shopControlers = require("./controlers/shopController");
+const shopControllers = require("./controlers/shopController");
 
-router.get("/", shopControlers.shop);
-router.get("/item/:id", shopControlers.item);
-router.post("/item/:id/add", shopControlers.addItem);
-router.get("/cart", shopControlers.cart);
-router.post("/cart", shopControlers.checkoutCart);
+router.get("/", shopControllers.shop);
+router.get("/item/:id", shopControllers.item);
+router.post("/item/:id/add", shopControllers.addItem);
+router.get("/cart", shopControllers.cart);
+router.post("/cart", shopControllers.checkoutCart);
 
 module.exports = router;

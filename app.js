@@ -19,12 +19,16 @@
 
 const express = require("express");
 const app = express();
+var path = require("path");
 const mainRoutes = require("./src/routes/mainRoutes");
 const shopRoutes = require("./src/routes/shopRoutes");
 const adminRoutes = require("./src/routes/adminRoutes");
 const authRoutes = require("./src/routes/authRoutes");
 
 app.use(express.static("public_html"));
+
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "hbs");
 
 app.use("/", mainRoutes);
 app.use("/shop", shopRoutes);

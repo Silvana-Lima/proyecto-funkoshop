@@ -7,11 +7,19 @@ const shopRoutes = require("./src/routes/shopRoutes");
 const adminRoutes = require("./src/routes/adminRoutes");
 const authRoutes = require("./src/routes/authRoutes");
 
-app.use(express.static("public_html"));
+app.use(express.static(path.join(__dirname, "public")));
 
-app.set("views", path.join(__dirname, "views"));
+hbs.registerPartials(
+  path.join(__dirname, "src", "views", "partials"),
+  function (err) {
+    if (err) {
+      console.error("Error al registrar parciales:", err);
+    }
+  }
+);
+
+app.set("views", path.join(__dirname, "src", "views"));
 app.set("view engine", "hbs");
-hbs.registerPartials(__dirname + "/views/partials", function (err) {});
 
 app.use("/", mainRoutes);
 app.use("/shop", shopRoutes);

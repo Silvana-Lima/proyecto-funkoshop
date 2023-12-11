@@ -1,0 +1,104 @@
+<main class="">
+  <h2 class="titulo-seccion">EDITAR ITEM</h2>
+  <form action="" class="form-item">
+    <div class="cont-categ-licencia">
+      <div>
+        <label for="categoria" class="form-label">Categoria</label>
+        <select name="categoria" id="" class="select-form">
+          <option value="">Seleccionar</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+      </div>
+      <div>
+        <label for="licencia" class="form-label">Licencia</label>
+        <select name="licencia" id="" class="select-form">
+          <option value="">Seleccionar</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+
+      </div>
+    </div>
+    <div>
+      <label for="nombre-producto" class="form-label">Nombre del producto:</label>
+      <input
+        type="text"
+        name="nombre-producto"
+        id=""
+        class="form-input"
+        placeholder="Kakashi Hatake Shippuden Saga"
+      />
+    </div>
+    <textarea
+      name=""
+      id=""
+      cols="30"
+      rows="10"
+      placeholder="Descripción del producto"
+    ></textarea>
+    <div class="cont-sku-precio-stock">
+      <label for="sku" class="form-label">SKU:</label>
+      <input
+        type="text"
+        name="sku"
+        id=""
+        class="form-input"
+        placeholder="SSK111AB001"
+      />
+      <label for="precio" class="form-label">Precio:</label>
+      <input
+        type="number"
+        name="precio"
+        class="form-input"
+        placeholder="$0.000,00"
+      />
+      <label for="stock" class="form-label">Stock:</label>
+      <input type="number" name="stock" class="input-stock" placeholder="0" />
+    </div>
+    <div class="cont-desc-cuotas">
+      <label for="descuento" class="form-label">Descuento:</label>
+      <input
+        type="number"
+        name="descuento"
+        id=""
+        class="form-input input-desc"
+        placeholder="0%"
+      />
+      <label for="cuotas" class="form-label">Cuotas</label>
+      <select name="cuotas" id="" class="select-form">
+        <option value="">3 Cuotas sin interés</option>
+        <option value="">2</option>
+        <option value="">3</option>
+      </select>
+
+    </div>
+    <div>
+      <label for="imagenes" class="form-label">Imágenes:</label>
+      <input type="file" name="imagenes" id="" class="input-imagenes" />
+    </div>
+    <div class="cont-img-cargada">
+      <div class="cont-img-cargada-frente">
+        <figure class="cont-img">
+          <img src="../assets/pokemon/charmander-1.webp" alt="" />
+        </figure>
+        <p>Frente</p>
+      </div>
+      <div class="cont-img-cargada-dorso">
+        <figure class="cont-img">
+          <img src="../assets/pokemon/charmander-box.webp" alt="" />
+        </figure>
+        <p>Dorso</p>
+      </div>
+
+    </div>
+
+    <div>
+      <button class="btn-form">Modificar Producto</button>
+
+    </div>
+
+  </form>
+</main>

@@ -1,16 +1,16 @@
 const { getAll } = require("../models/productModel");
 
 const mainControllers = {
-  // home: (req, res) => res.render("index", { title: "Home - Funkoshop" }),
-  home: async (req, res) => {
-    const results = await getAll();
-    console.log(results);
+  home: (req, res) => res.render("index", { title: "Home - Funkoshop" }),
+  // home: async (req, res) => {
+  //   const results = await getAll();
+  //   console.log(results);
 
-    res.send({
-      info: "Home - Funkoshop",
-      data: results,
-    });
-  },
+  //   res.send({
+  //     info: "Home - Funkoshop",
+  //     data: results,
+  //   });
+  // },
   // home: async (req, res) => {
   //   const results = await getAll();
 

@@ -78,7 +78,7 @@
 
 .main-shop {
   margin: 0;
-  width: 960.025px;
+  width: 1200px;
 }
 
 .lista-productos-shop {
@@ -87,10 +87,6 @@
   grid-template-rows: repeat(3, 1fr);
   gap: 24px;
   margin-left: 15px;
-}
-
-.card-producto-shop {
-  width: 304px;
 }
 
 .paginado {

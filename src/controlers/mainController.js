@@ -1,12 +1,14 @@
-const { getCollections } = require("../models/productModel");
+const { getCollections, getAll } = require("../models/productModel");
 
 const mainControllers = {
   home: async (req, res) => {
-    const results = await getCollections();
+    const collections = await getCollections();
+    const products = await getAll();
 
     res.render("index", {
       title: "Home - Funkoshop",
-      data: results,
+      data: collections,
+      news: products,
     });
   },
 

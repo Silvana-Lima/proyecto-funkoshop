@@ -81,170 +81,29 @@
     </form>
   </aside>
   <main class="main-shop">
+    {{!-- <p>{{data}} </p> --}}
     <section class="productos-shop">
       <ul class="lista-productos-shop">
+        {{#each data}}
         <li>
           <article class="card-producto-shop">
-            <a href="">
+            <a href="/shop/item/{{product_id}}">
               <picture class="cont-img-card-producto">
                 <img
-                  src="../assets/star-wars/trooper-1.webp"
-                  alt="STORMTROOPER LIGHTSABER"
+                  src="{{image_front}}"
+                  alt="{{product_name}}"
                   class="img-card-producto"
                 />
               </picture>
-              <p class="subtitulo-card-producto">STAR WARS</p>
-              <h4 class="titulo-card-producto">STORMTROOPER LIGHTSABER</h4>
-              <p class="precio-card-producto">$ 1799,99</p>
+              <p class="subtitulo-card-producto">{{licence_name}}</p>
+              <h4 class="titulo-card-producto">{{product_name}}</h4>
+              <p class="precio-card-producto">$ {{price}}</p>
               <p class="cuotas-card-producto">3 CUOTAS SIN INTERÉS</p>
 
             </a>
           </article>
-        </li>
-        <li>
-          <article class="card-producto-shop">
-            <a href="">
-              <picture class="cont-img-card-producto">
-                <img
-                  src="../assets/pokemon/pidgeotto-1.webp"
-                  alt="PIDGEOTTO"
-                  class="img-card-producto"
-                />
-              </picture>
-              <p class="subtitulo-card-producto">POKEMON</p>
-              <h4 class="titulo-card-producto">PIDGEOTTO</h4>
-              <p class="precio-card-producto">$ 1799,99</p>
-              <p class="cuotas-card-producto">3 CUOTAS SIN INTERÉS</p>
+          {{/each}}
 
-            </a>
-          </article>
-        </li>
-        <li>
-          <article class="card-producto-shop">
-            <a href="">
-              <picture class="cont-img-card-producto">
-                <img
-                  src="../assets/harry-potter/luna-1.webp"
-                  alt="LUNA LOVEGOOD LION MASK"
-                  class="img-card-producto"
-                />
-              </picture>
-              <p class="subtitulo-card-producto">HARRY POTTER</p>
-              <h4 class="titulo-card-producto">LUNA LOVEGOOD LION MASK</h4>
-              <p class="precio-card-producto">$ 1799,99</p>
-              <p class="cuotas-card-producto">3 CUOTAS SIN INTERÉS</p>
-
-            </a>
-          </article>
-        </li>
-        <li>
-          <article class="card-producto-shop">
-            <a href="">
-              <picture class="cont-img-card-producto">
-                <img
-                  src="../assets/star-wars/trooper-1.webp"
-                  alt="STORMTROOPER LIGHTSABER"
-                  class="img-card-producto"
-                />
-              </picture>
-              <p class="subtitulo-card-producto">STAR WARS</p>
-              <h4 class="titulo-card-producto">STORMTROOPER LIGHTSABER</h4>
-              <p class="precio-card-producto">$ 1799,99</p>
-              <p class="cuotas-card-producto">3 CUOTAS SIN INTERÉS</p>
-
-            </a>
-          </article>
-        </li>
-        <li>
-          <article class="card-producto-shop">
-            <a href="">
-              <picture class="cont-img-card-producto">
-                <img
-                  src="../assets/pokemon/pidgeotto-1.webp"
-                  alt="PIDGEOTTO"
-                  class="img-card-producto"
-                />
-              </picture>
-              <p class="subtitulo-card-producto">POKEMON</p>
-              <h4 class="titulo-card-producto">PIDGEOTTO</h4>
-              <p class="precio-card-producto">$ 1799,99</p>
-              <p class="cuotas-card-producto">3 CUOTAS SIN INTERÉS</p>
-
-            </a>
-          </article>
-        </li>
-        <li>
-          <article class="card-producto-shop">
-            <a href="">
-              <picture class="cont-img-card-producto">
-                <img
-                  src="../assets/harry-potter/luna-1.webp"
-                  alt="LUNA LOVEGOOD LION MASK"
-                  class="img-card-producto"
-                />
-              </picture>
-              <p class="subtitulo-card-producto">HARRY POTTER</p>
-              <h4 class="titulo-card-producto">LUNA LOVEGOOD LION MASK</h4>
-              <p class="precio-card-producto">$ 1799,99</p>
-              <p class="cuotas-card-producto">3 CUOTAS SIN INTERÉS</p>
-
-            </a>
-          </article>
-        </li>
-        <li>
-          <article class="card-producto-shop">
-            <a href="">
-              <picture class="cont-img-card-producto">
-                <img
-                  src="../assets/star-wars/trooper-1.webp"
-                  alt="STORMTROOPER LIGHTSABER"
-                  class="img-card-producto"
-                />
-              </picture>
-              <p class="subtitulo-card-producto">STAR WARS</p>
-              <h4 class="titulo-card-producto">STORMTROOPER LIGHTSABER</h4>
-              <p class="precio-card-producto">$ 1799,99</p>
-              <p class="cuotas-card-producto">3 CUOTAS SIN INTERÉS</p>
-
-            </a>
-          </article>
-        </li>
-        <li>
-          <article class="card-producto-shop">
-            <a href="">
-              <picture class="cont-img-card-producto">
-                <img
-                  src="../assets/pokemon/pidgeotto-1.webp"
-                  alt="PIDGEOTTO"
-                  class="img-card-producto"
-                />
-              </picture>
-              <p class="subtitulo-card-producto">POKEMON</p>
-              <h4 class="titulo-card-producto">PIDGEOTTO</h4>
-              <p class="precio-card-producto">$ 1799,99</p>
-              <p class="cuotas-card-producto">3 CUOTAS SIN INTERÉS</p>
-
-            </a>
-          </article>
-        </li>
-        <li>
-          <article class="card-producto-shop">
-            <a href="">
-              <picture class="cont-img-card-producto">
-                <img
-                  src="../assets/harry-potter/luna-1.webp"
-                  alt="LUNA LOVEGOOD LION MASK"
-                  class="img-card-producto"
-                />
-              </picture>
-              <p class="subtitulo-card-producto">HARRY POTTER</p>
-              <h4 class="titulo-card-producto">LUNA LOVEGOOD LION MASK</h4>
-              <p class="precio-card-producto">$ 1799,99</p>
-              <p class="cuotas-card-producto">3 CUOTAS SIN INTERÉS</p>
-
-            </a>
-          </article>
-        </li>
       </ul>
       <div class="paginado">
         <ul class="lista-paginado">

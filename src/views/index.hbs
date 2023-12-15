@@ -4,62 +4,31 @@
     <article class="cont-nuevos-ingresos">
 
       <h3 class="titulo-nuevos-ingresos">Nuevos Ingresos</h3>
-      <p>Descubrí el próximo Funko Pop de tu colección{{data}} </p>
+      <p>Descubrí el próximo Funko Pop de tu colección</p>
       <button
         class="link-shop"
-        onclick="window.location.href='./pages/shop.html'"
+        onclick="window.location.href='/shop'"
       >SHOP</button>
     </article>
   </section>
   <section class="container seccion-colecciones">
-
+{{#each data}}
     <article class="articulo-seccion-colecciones">
       <div class="articulo-detalle">
-        <h3 class="articulo-detalle-titulo">STAR WARS & THE MANDALORIAN
+        <h3 class="articulo-detalle-titulo">{{licence_name}}
         </h3>
-        <p class="articulo-detalle-descripcion">Disfruta de una saga que sigue
-          agregando personajes a su colección.</p>
+        <p class="articulo-detalle-descripcion">{{licence_description}}</p>
         <button class="btn-ver-coleccion">VER COLECCIÓN</button>
 
       </div>
       <picture class="cont-img-articulo"><img
-          src="./assets/star-wars/baby-yoda-1.webp"
+          src="{{licence_image}}"
           alt="Baby Yoda"
           class="img-articulo"
         />
       </picture>
     </article>
-
-    <article class="articulo-seccion-colecciones">
-      <picture class="cont-img-articulo"><img
-          src="./assets/pokemon/vulpix-1.webp"
-          alt="Vulpix"
-          class="img-articulo"
-        />
-      </picture>
-      <div class="articulo-detalle">
-        <h3 class="articulo-detalle-titulo">POKEMON INDIGO
-        </h3>
-        <p class="articulo-detalle-descripcion">Atrapa todos los que puedas y
-          disfruta de una colección llena de amigos.</p>
-        <button class="btn-ver-coleccion">VER COLECCIÓN</button>
-      </div>
-    </article>
-    <article class="articulo-seccion-colecciones">
-      <div class="articulo-detalle">
-        <h3 class="articulo-detalle-titulo">HARRY POTTER
-        </h3>
-        <p class="articulo-detalle-descripcion">
-          Revive los recuerdos de una saga llena de magia y encanto</p>
-        <button class="btn-ver-coleccion">VER COLECCIÓN</button>
-      </div>
-      <picture class="cont-img-articulo"><img
-          src="./assets/harry-potter/snape-patronus-1.webp"
-          alt="Snape patronus"
-          class="img-articulo"
-        />
-      </picture>
-    </article>
+ {{/each}}
 
   </section>
 

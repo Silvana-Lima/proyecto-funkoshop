@@ -26,4 +26,8 @@ app.use("/shop", shopRoutes);
 app.use("/admin", adminRoutes);
 app.use("/auth", authRoutes);
 
+app.use((req, res, next) => {
+  res.status(404).send("Página no encontrada");
+});
+
 app.listen(4000, () => console.log("servidor corriendo en localhost:4000"));

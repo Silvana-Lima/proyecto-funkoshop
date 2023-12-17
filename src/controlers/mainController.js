@@ -9,6 +9,7 @@ const mainControllers = {
       title: "Home - Funkoshop",
       data: collections,
       news: products,
+      isLogged: false,
     });
   },
 

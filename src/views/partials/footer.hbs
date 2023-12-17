@@ -1,18 +1,51 @@
 <footer class="footer">
-  <nav class="navbar container navbar--footer">
-    <ul class="navbar__menu--footer">
-      <li class="navbar__item"><a class="navbar-link" href="/shop">SHOP</a></li>
-      <li class="navbar__item"><a
-          class="navbar-link"
-          href="/auth/login"
-        >INGRESAR</a></li>
-      <li class="navbar__item"><a class="navbar-link" href="">CONTACTO</a></li>
-    </ul>
-    <img
-      src="/assets/branding/isotype.svg"
-      alt="logo-funkoshop"
-      class="logo-funkoshop-footer"
-    />
-  </nav>
+  {{#if isLogged}}
+    <nav class="navbar container">
+      <ul class="navbar__items">
+        <li class="navbar__item">
+          <a class="navbar-link" href="/shop">SHOP</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar-link" href="/auth/register">REGISTRARSE</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar-link" href="/auth/login">INGRESAR</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar-link" href="">CONTACTO</a>
+        </li>
+      </ul>
+
+      <picture>
+        <img
+          src="../img/branding/isotype.svg"
+          alt="Isotipo de la Marca Funkoshop"
+        />
+      </picture>
+    </nav>
+
+  {{else}}
+    <nav class="navbar container navbar--footer">
+      <ul class="navbar__menu--footer">
+        <li class="navbar__item"><a
+            class="navbar-link"
+            href="/shop"
+          >SHOP</a></li>
+        <li class="navbar__item"><a
+            class="navbar-link"
+            href="/auth/login"
+          >INGRESAR</a></li>
+        <li class="navbar__item"><a
+            class="navbar-link"
+            href=""
+          >CONTACTO</a></li>
+      </ul>
+      <img
+        src="/assets/branding/isotype.svg"
+        alt="logo-funkoshop"
+        class="logo-funkoshop-footer"
+      />
+    </nav>
+  {{/if}}
   <p class="copy-footer">All rights reserved 2023 - Funkoshop &copy;</p>
 </footer>

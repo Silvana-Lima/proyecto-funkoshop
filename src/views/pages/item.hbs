@@ -1,4 +1,3 @@
-{{> header}}
 <main>
   <section class="container section-item">
     <article class="card-product">
@@ -38,7 +37,9 @@
         </div>
         <a class="link-pagos-item">
           <u>Ver métodos de pago</u>
-          - {{data.dues}} CUOTAS SIN INTERÉS</a>
+          -
+          {{data.dues}}
+          CUOTAS SIN INTERÉS</a>
       </div>
     </article>
   </section>
@@ -47,30 +48,30 @@
     <div class="glide__track" data-glide-el="track">
       <ul class="slider__items glide__slides">
         {{#each relatedProducts}}
-        <li class="slider__item glide__slide">
-          <article class="card-producto">
-            <a href="/shop/item/{{product_id}}">
-              <picture class="cont-img-card-producto">
-                <span class="card-producto__tag">Nuevo</span>
-                <img
-                  src="{{image_front}}"
-                  alt="{{product_name}}"
-                  class="img-card-producto card-item__img--front"
-                />
-                <img
-                  src="{{image_back}}"
-                  alt="{{product_name}}"
-                  class="img-card-producto card-item__img--back"
-                />
-              </picture>
-              <p class="subtitulo-card-producto">{{licence_name}}</p>
-              <h4 class="titulo-card-producto">{{product_name}}</h4>
-              <p class="precio-card-producto">{{price}}</p>
-              <p class="cuotas-card-producto">{{dues}} CUOTAS SIN INTERÉS</p>
+          <li class="slider__item glide__slide">
+            <article class="card-producto">
+              <a href="/shop/item/{{product_id}}">
+                <picture class="cont-img-card-producto">
+                  <span class="card-producto__tag">Nuevo</span>
+                  <img
+                    src="{{image_front}}"
+                    alt="{{product_name}}"
+                    class="img-card-producto card-item__img--front"
+                  />
+                  <img
+                    src="{{image_back}}"
+                    alt="{{product_name}}"
+                    class="img-card-producto card-item__img--back"
+                  />
+                </picture>
+                <p class="subtitulo-card-producto">{{licence_name}}</p>
+                <h4 class="titulo-card-producto">{{product_name}}</h4>
+                <p class="precio-card-producto">{{price}}</p>
+                <p class="cuotas-card-producto">{{dues}} CUOTAS SIN INTERÉS</p>
 
-            </a>
-          </article>
-        </li>
+              </a>
+            </article>
+          </li>
         {{/each}}
       </ul>
     </div>
@@ -87,11 +88,3 @@
     </div>
   </section>
 </main>
-{{> footer}}
-
-<script
-  src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"
-></script>
-<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-<script src="/js/glide.js"></script>
-<script src="/js/item.js"></script>

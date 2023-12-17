@@ -6,17 +6,35 @@ const getCollections = async () => {
 };
 
 const getAll = async () => {
-  const [products] = await conn.query(
-    "SELECT product.product_id, product.image_front, product.image_back, product.product_name, licence.licence_name, product.price, product.product_description, product.dues FROM product, licence WHERE product.licence_id =  licence.licence_id"
-  );
-  return products;
+  try {
+    const [products] = await conn.query(
+      "SELECT product.product_id, product.image_front, product.image_back, product.product_name, licence.licence_name, product.price, product.product_description, product.dues, product.sku FROM product, licence WHERE product.licence_id =  licence.licence_id"
+    );
+    return products;
+  } catch (error) {
+    return {
+      error: true,
+      message: `Hemos encontrado un error ${error}`,
+    };
+  } finally {
+    conn.releaseConnection();
+  }
 };
 
 const getProductById = async (id) => {
-  const [product] = await conn.query(
-    `SELECT product.product_id, product.image_front, product.image_back, product.product_name, licence.licence_name, product.price, product.product_description, product.dues FROM product, licence WHERE product.licence_id =  licence.licence_id and product_id = ${id}`
-  );
-  return product;
+  try {
+    const [product] = await conn.query(
+      `SELECT product.product_id, product.image_front, product.image_back, product.product_name, licence.licence_name, product.price, product.product_description, product.dues FROM product, licence WHERE product.licence_id =  licence.licence_id and product_id = ${id}`
+    );
+    return product;
+  } catch (error) {
+    return {
+      error: true,
+      message: `Hemos encontrado un error ${error}`,
+    };
+  } finally {
+    conn.releaseConnection();
+  }
 };
 
 const getProductsByLicence = async (licenceName) => {

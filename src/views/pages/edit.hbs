@@ -1,10 +1,10 @@
-<main class="">
+<main class="main-create-edit container">
   <h2 class="titulo-seccion">EDITAR ITEM</h2>
   <form action="" class="form-item">
     <div class="cont-categ-licencia">
       <div>
         <label for="categoria" class="form-label">Categoria</label>
-        <select name="categoria" id="" class="select-form">
+        <select name="categoria" id="" class="select-form" value="">
           <option value="">Seleccionar</option>
           <option value="">1</option>
           <option value="">2</option>
@@ -13,7 +13,12 @@
       </div>
       <div>
         <label for="licencia" class="form-label">Licencia</label>
-        <select name="licencia" id="" class="select-form">
+        <select
+          name="licencia"
+          id=""
+          class="select-form"
+          value="{{data.licence_name}}"
+        >
           <option value="">Seleccionar</option>
           <option value="">1</option>
           <option value="">2</option>
@@ -29,31 +34,27 @@
         name="nombre-producto"
         id=""
         class="form-input"
-        placeholder="Kakashi Hatake Shippuden Saga"
+        value="{{data.product_name}}"
       />
     </div>
-    <textarea
-      name=""
-      id=""
-      cols="30"
-      rows="10"
-      placeholder="Descripción del producto"
-    ></textarea>
+    <textarea name="" id="" cols="30" rows="10">
+      {{data.product_description}}
+    </textarea>
     <div class="cont-sku-precio-stock">
       <label for="sku" class="form-label">SKU:</label>
       <input
-        type="text"
+        type="number"
         name="sku"
         id=""
         class="form-input"
-        placeholder="SSK111AB001"
+        value="{{data.sku}}"
       />
       <label for="precio" class="form-label">Precio:</label>
       <input
         type="number"
         name="precio"
         class="form-input"
-        placeholder="$0.000,00"
+        value="{{data.price}}"
       />
       <label for="stock" class="form-label">Stock:</label>
       <input type="number" name="stock" class="input-stock" placeholder="0" />
@@ -82,13 +83,13 @@
     <div class="cont-img-cargada">
       <div class="cont-img-cargada-frente">
         <figure class="cont-img">
-          <img src="../assets/pokemon/charmander-1.webp" alt="" />
+          <img src="{{data.image_front}}" alt="" />
         </figure>
         <p>Frente</p>
       </div>
       <div class="cont-img-cargada-dorso">
         <figure class="cont-img">
-          <img src="../assets/pokemon/charmander-box.webp" alt="" />
+          <img src="{{data.image_back}}" alt="" />
         </figure>
         <p>Dorso</p>
       </div>

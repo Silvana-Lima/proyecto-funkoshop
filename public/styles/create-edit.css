@@ -1,5 +1,7 @@
 /**** Estilos comptartidos en pages: Create y Edit ****/
-
+.main-create-edit {
+  margin: 40px auto;
+}
 .form-item {
   font-size: var(--font-large);
   width: 827px;

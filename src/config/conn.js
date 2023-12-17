@@ -18,6 +18,7 @@ pool.getConnection((e, conn) => {
   } else {
     console.log("Conexión exitosa!!!");
     conn.release();
+    //libera la conexión
   }
 });
 

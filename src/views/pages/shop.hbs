@@ -1,5 +1,4 @@
-{{> header}}
-<div class="container body-shop">
+<div class="body-shop">
   <aside class="aside-shop">
     <form action="" class="form-filtros-shop">
       <label for="buscar" class="filtros-shop-titulo">BUSCAR</label>
@@ -84,26 +83,28 @@
     <section class="productos-shop">
       <ul class="lista-productos-shop">
         {{#each data}}
-        <li>
-          <article class="card-producto">
-            <a href="/shop/item/{{product_id}}">
-              <picture class="cont-img-card-producto">
-                <span class="card-producto__tag">Nuevo</span>
-                <img
-                  src="{{image_front}}"
-                  alt="{{product_name}}"
-                  class="img-card-producto"
-                />
-              </picture>
-              <p class="subtitulo-card-producto">{{licence_name}}</p>
-              <h4 class="titulo-card-producto">{{product_name}}</h4>
-              <p class="precio-card-producto">$ {{price}}</p>
-              <p class="cuotas-card-producto">3 CUOTAS SIN INTERÉS</p>
+          <li>
+            <article class="card-producto card-shop">
+              <a href="/shop/item/{{product_id}}">
+                <picture
+                  class="cont-img-card-producto cont-img-card-producto-shop"
+                >
+                  <span class="card-producto__tag">Nuevo</span>
+                  <img
+                    src="{{image_front}}"
+                    alt="{{product_name}}"
+                    class="img-card-producto"
+                  />
+                </picture>
+                <p class="subtitulo-card-producto">{{licence_name}}</p>
+                <h4 class="titulo-card-producto">{{product_name}}</h4>
+                <p class="precio-card-producto">$ {{price}}</p>
+                <p class="cuotas-card-producto">3 CUOTAS SIN INTERÉS</p>
 
-            </a>
-          </article>
+              </a>
+            </article>
           </li>
-          {{/each}}
+        {{/each}}
 
       </ul>
       <div class="paginado">
@@ -127,7 +128,3 @@
     </section>
   </main>
 </div>
-{{> footer}}
-<script
-  src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"
-></script>

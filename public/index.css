@@ -69,7 +69,7 @@ html {
 main {
   background-color: var(--light-bg-solid);
   color: var(--dark-solid);
-  max-width: 1220px;
+  /* max-width: 1220px; */
   margin: 36px auto;
 }
 
@@ -125,6 +125,7 @@ textarea::placeholder {
   font-size: var(--font-display);
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 45px;
 }
 
 .body-home {
@@ -172,7 +173,6 @@ textarea::placeholder {
 header {
   height: 144px;
   background-color: var(--dark-bg-solid);
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -228,7 +228,6 @@ header {
 /**** Estilos sección Nuevos ingresos ****/
 
 .main-home {
-  max-width: 1440px;
   margin: 0 auto;
 }
 .banner {
@@ -240,7 +239,7 @@ header {
   background-size: cover;
   display: flex;
   align-items: center;
-  padding-left: 105px;
+  /* padding-left: 105px; */
   color: var(--light-font-solid);
   position: relative;
 }
@@ -257,7 +256,9 @@ header {
 }
 
 .cont-nuevos-ingresos {
+  width: 1200px;
   position: relative;
+  margin: auto;
 }
 
 .titulo-nuevos-ingresos {
@@ -289,6 +290,10 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.seccion-colecciones article:nth-child(2) .cont-img-articulo {
+  order: -1;
 }
 
 .articulo-seccion-colecciones {
@@ -350,7 +355,6 @@ header {
 .card-producto {
   width: 359.966px;
   height: 512px;
-  margin-top: 57px;
   overflow: hidden;
 }
 
@@ -450,7 +454,7 @@ iconify-icon {
 
 .footer {
   background-color: var(--dark-bg-solid);
-  max-width: 1440px;
+  /* max-width: 1440px; */
   display: flex;
   flex-direction: column;
   padding: 68px;

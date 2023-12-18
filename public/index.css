@@ -323,10 +323,12 @@ header {
   font-weight: 400;
   border-bottom: 2px solid var(--primary-solid);
   padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .btn-ver-coleccion {
-  margin-top: 34px;
+  padding: 10px 40px;
+
   width: 291.809px;
   height: 65px;
   border-radius: 50px;

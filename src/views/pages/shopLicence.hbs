@@ -1,0 +1,44 @@
+<section class="productos-shop">
+  <ul class="lista-productos-shop">
+    {{#each data}}
+      <li>
+        <article class="card-producto card-shop">
+          <a href="/shop/item/{{product_id}}">
+            <picture class="cont-img-card-producto cont-img-card-producto-shop">
+              <span class="card-producto__tag">Nuevo</span>
+              <img
+                src="{{image_front}}"
+                alt="{{product_name}}"
+                class="img-card-producto"
+              />
+            </picture>
+            <p class="subtitulo-card-producto">{{licence_name}}</p>
+            <h4 class="titulo-card-producto">{{product_name}}</h4>
+            <p class="precio-card-producto">$ {{price}}</p>
+            <p class="cuotas-card-producto">3 CUOTAS SIN INTERÉS</p>
+
+          </a>
+        </article>
+      </li>
+    {{/each}}
+
+  </ul>
+  <div class="paginado">
+    <ul class="lista-paginado">
+      <li class="lista-pag-item"><a
+          href=""
+          class="link-lista-paginado link-prev"
+        >
+          <iconify-icon icon="ooui:next-rtl"></iconify-icon></a>
+      </li>
+      <li class=""><a href="" class="link-lista-paginado">1</a></li>
+      <li class=""><a href="" class="link-lista-paginado">2</a></li>
+      <li class=""><a href="" class="link-lista-paginado">...</a></li>
+      <li class=""><a href="" class="link-lista-paginado">9</a></li>
+      <li class=""><a href="" class="link-lista-paginado">10</a></li>
+      <li class=""><a href="" class="link-lista-paginado link-next">
+          <iconify-icon icon="ooui:next-ltr"></iconify-icon>
+        </a></li>
+    </ul>
+  </div>
+</section>

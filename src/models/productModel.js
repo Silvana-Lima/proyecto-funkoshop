@@ -38,10 +38,19 @@ const getProductById = async (id) => {
 };
 
 const getProductsByLicence = async (licenceName) => {
-  const [productsByLicence] = await conn.query(
-    `SELECT product.product_id, product.image_front, product.image_back, product.product_name, licence.licence_name, product.price, product.product_description, product.dues FROM product, licence WHERE product.licence_id =  licence.licence_id AND licence.licence_name = ${licenceName}`
-  );
-  return productsByLicence;
+  try {
+    const [productsByLicence] = await conn.query(
+      `SELECT product.product_id, product.image_front, product.image_back, product.product_name, licence.licence_name, product.price, product.product_description, product.dues FROM product, licence WHERE product.licence_id =  licence.licence_id AND licence.licence_name = ${licenceName}`
+    );
+    return productsByLicence;
+  } catch (error) {
+    return {
+      error: true,
+      message: `Hemos encontrado un error ${error}`,
+    };
+  } finally {
+    conn.releaseConnection();
+  }
 };
 
 module.exports = {

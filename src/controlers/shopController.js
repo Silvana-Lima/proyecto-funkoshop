@@ -14,6 +14,17 @@ const shopControllers = {
       isLogged: false,
     });
   },
+  shopLicence: async (req, res) => {
+    const productsByLicence = await getProductsByLicence(
+      `'${req.params.licence_name}'`
+    );
+
+    res.render("pages/shop", {
+      title: "Shop - Funkoshop",
+      data: productsByLicence,
+      isLogged: false,
+    });
+  },
   item: async (req, res) => {
     const product = await getProductById(req.params.product_id);
 

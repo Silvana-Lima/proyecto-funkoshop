@@ -1,4 +1,4 @@
-<div class="body-shop">
+<div class="container body-shop">
   <aside class="aside-shop">
     <form action="" class="form-filtros-shop">
       <label for="buscar" class="filtros-shop-titulo">BUSCAR</label>
@@ -84,11 +84,9 @@
       <ul class="lista-productos-shop">
         {{#each data}}
           <li>
-            <article class="card-producto card-shop">
+            <article class="card-producto">
               <a href="/shop/item/{{product_id}}">
-                <picture
-                  class="cont-img-card-producto cont-img-card-producto-shop"
-                >
+                <picture class="cont-img-card-producto">
                   <span class="card-producto__tag">Nuevo</span>
                   <img
                     src="{{image_front}}"

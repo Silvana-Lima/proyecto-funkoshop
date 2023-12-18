@@ -354,15 +354,15 @@ header {
 
 /**** Estilos sección Últimos lanzamientos ****/
 
+.section-ultimos-lanzamientos {
+  margin-bottom: 30px;
+}
+
 .card-producto {
-  width: 359.966px;
-  height: 512px;
   overflow: hidden;
 }
 
 .cont-img-card-producto {
-  width: 359.966px;
-  height: 352px;
   display: flex;
   position: relative;
 }
@@ -486,4 +486,12 @@ iconify-icon {
   font-weight: 500;
   margin-top: 56px;
   color: var(--light-font-solid);
+}
+
+/* RESPONSIVE TABLET */
+@media screen and (max-width: 768px) {
+}
+
+/* RESPONSIVE MOBILE */
+@media screen and (max-width: 480px) {
 }

@@ -1,28 +1,21 @@
 <main class="main-create-edit container">
   <h2 class="titulo-seccion">EDITAR ITEM</h2>
-  <form action="" class="form-item">
+  <form action="" class="form-item" method="POST">
     <div class="cont-categ-licencia">
       <div>
         <label for="categoria" class="form-label">Categoria</label>
         <select name="categoria" id="" class="select-form" value="">
-          <option value="">Seleccionar</option>
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
+          <option value="Figuras Coleccionables">Figuras Coleccionables</option>
+          <option value="Llaveros">Llaveros</option>
+          <option value="Remeras">Remeras</option>
         </select>
       </div>
       <div>
         <label for="licencia" class="form-label">Licencia</label>
-        <select
-          name="licencia"
-          id=""
-          class="select-form"
-          value="{{data.licence_name}}"
-        >
-          <option value="">Seleccionar</option>
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
+        <select name="licencia" id="" class="select-form">
+          <option value="Harry Potter">Harry Potter</option>
+          <option value="Star Wars">Star Wars</option>
+          <option value="Pokemon">Pokemon</option>
         </select>
 
       </div>
@@ -43,7 +36,7 @@
     <div class="cont-sku-precio-stock">
       <label for="sku" class="form-label">SKU:</label>
       <input
-        type="number"
+        type="text"
         name="sku"
         id=""
         class="form-input"
@@ -57,7 +50,12 @@
         value="{{data.price}}"
       />
       <label for="stock" class="form-label">Stock:</label>
-      <input type="number" name="stock" class="input-stock" placeholder="0" />
+      <input
+        type="number"
+        name="stock"
+        class="input-stock"
+        value="{{data.stock}}"
+      />
     </div>
     <div class="cont-desc-cuotas">
       <label for="descuento" class="form-label">Descuento:</label>

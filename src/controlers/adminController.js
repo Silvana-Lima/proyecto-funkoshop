@@ -1,4 +1,8 @@
-const { getAll, getProductById } = require("../models/productModel");
+const {
+  getAll,
+  getProductById,
+  createItem,
+} = require("../models/productModel");
 
 const adminControllers = {
   admin: async (req, res) => {
@@ -9,9 +13,30 @@ const adminControllers = {
       isLogged: true,
     });
   },
-  create: (req, res) =>
+  createView: (req, res) =>
     res.render("pages/create", { title: "Create - Funkoshop", isLogged: true }),
-  createPost: (req, res) => res.send("route for CreatePost view"),
+  createItem: async (req, res) => {
+    // console.log(req.body);
+    // console.log(req.files);
+
+    const product_schema = {
+      product_name: req.body.itemName,
+      product_description: req.body.description,
+      sku: req.body.sku,
+      price: Number(req.body.price),
+      dues: Number(req.body.dues),
+      stock: Number(req.body.stock),
+      discount: Number(req.body.discount),
+      category_id: Number(req.body.category),
+      licence_id: Number(req.body.licence),
+      image_front: req.files[0].originalname,
+      image_back: req.files[1].originalname,
+    };
+
+    await createItem(Object.values(product_schema));
+    // console.log(Object.values(product_schema));
+    res.redirect("/admin");
+  },
   edit: async (req, res) => {
     const product = await getProductById(req.params.product_id);
     res.render("pages/edit", {

@@ -46,7 +46,10 @@ const shopControllers = {
   addItem: (req, res) =>
     res.send("route for add the current item to de shop cart"),
   cart: (req, res) =>
-    res.render("pages/cart", { title: "Cart - Funkoshop", isLogged: false }),
+    res.render("pages/cart", {
+      title: "Cart - Funkoshop",
+      isLogged: false,
+    }),
   checkoutCart: (req, res) => res.send("route for go to checkout page"),
 };
 

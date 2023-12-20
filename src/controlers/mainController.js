@@ -13,8 +13,16 @@ const mainControllers = {
     });
   },
 
-  contact: (req, res) => res.send("route for Contact view"),
-  about: (req, res) => res.send("route for About view"),
+  contact: (req, res) =>
+    res.render("pages/contact", {
+      title: "Contact - Funkoshop",
+      isLogged: false,
+    }),
+  about: (req, res) =>
+    res.render("pages/cart", {
+      title: "Cart - Funkoshop",
+      isLogged: false,
+    }),
   faqs: (req, res) => res.send("route for Faqs view"),
 };
 

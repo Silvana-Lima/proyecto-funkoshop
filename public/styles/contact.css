@@ -1,0 +1,18 @@
+.main-contact {
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-contact {
+  font-size: var(--font-jumbo);
+}
+
+.form-contact {
+  max-width: 400px;
+  font-size: var(--font-large);
+}
+
+.text-message {
+  margin-top: 15px;
+}

@@ -16,9 +16,6 @@ const adminControllers = {
   createView: (req, res) =>
     res.render("pages/create", { title: "Create - Funkoshop", isLogged: true }),
   createItem: async (req, res) => {
-    // console.log(req.body);
-    // console.log(req.files);
-
     const product_schema = {
       product_name: req.body.itemName,
       product_description: req.body.description,
@@ -34,7 +31,6 @@ const adminControllers = {
     };
 
     await createItem(Object.values(product_schema));
-    // console.log(Object.values(product_schema));
     res.redirect("/admin");
   },
   edit: async (req, res) => {

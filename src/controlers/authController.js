@@ -1,7 +1,16 @@
+const { getAll } = require("../models/productModel");
+
 const authControllers = {
   login: (req, res) =>
     res.render("pages/login", { title: "Login - Funkoshop", isLogged: false }),
-  loginPost: (req, res) => res.send("route for login post view"),
+  loginPost: async (req, res) => {
+    const products = await getAll();
+    res.render("pages/admin", {
+      title: "Admin - Funkoshop",
+      data: products,
+      isLogged: true,
+    });
+  },
   register: (req, res) =>
     res.render("pages/register", {
       title: "Register - Funkoshop",

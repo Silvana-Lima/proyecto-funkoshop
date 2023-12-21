@@ -54,14 +54,26 @@ const getProductsByLicence = async (licenceName) => {
 };
 
 const createItem = async (item) => {
-  const insertItem = item.join(", ");
-  console.log("Item to be inserted:", insertItem);
+  //Formatear array "item"
+  const formattedValues = item.map((value) => {
+    if (typeof value === "string") {
+      // Si es una cadena, encerrarla entre comillas simples y escapar las comillas dentro de la cadena
+      return `'${value.replace(/'/g, "''")}'`;
+    } else if (typeof value === "number") {
+      // Si es un número, dejarlo como está
+      return value;
+    } else {
+      return null; // Devolver null para valores no admitidos
+    }
+  });
+
+  const consulta = `INSERT INTO product (product_name, product_description, sku, price, dues, stock, discount, category_id, licence_id, image_front, image_back) VALUES (${formattedValues.join(
+    ", "
+  )})`;
+
   try {
-    const newItem = await conn.query(
-      `INSERT INTO product (product_name,
-        product_description, sku, price, dues, stock,  discount, category_id, licence_id, image_front, image_back) VALUES (${insertItem})`
-    );
-    console.log("EL  NUEVO ITEM ES ", newItem);
+    const newItem = await conn.query(consulta);
+
     return newItem;
   } catch (error) {
     return {

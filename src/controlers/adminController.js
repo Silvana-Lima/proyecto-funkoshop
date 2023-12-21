@@ -2,6 +2,7 @@ const {
   getAll,
   getProductById,
   createItem,
+  deleteProduct,
 } = require("../models/productModel");
 
 const adminControllers = {
@@ -26,8 +27,8 @@ const adminControllers = {
       discount: Number(req.body.discount),
       category_id: Number(req.body.category),
       licence_id: Number(req.body.licence),
-      image_front: req.files[0].originalname,
-      image_back: req.files[1].originalname,
+      image_front: `/img/products/${req.files[0].filename}`,
+      image_back: `/img/products/${req.files[1].filename}`,
     };
 
     await createItem(Object.values(product_schema));
@@ -42,7 +43,10 @@ const adminControllers = {
     });
   },
   editPut: (req, res) => res.send("route for EditPut view"),
-  delete: (req, res) => res.send("route for Delete view"),
+  delete: async (req, res) => {
+    await deleteProduct(req.params.id);
+    res.redirect("/admin");
+  },
 };
 
 module.exports = adminControllers;

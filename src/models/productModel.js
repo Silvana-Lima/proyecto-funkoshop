@@ -85,10 +85,28 @@ const createItem = async (item) => {
   }
 };
 
+const deleteProduct = async (id) => {
+  try {
+    const product = await conn.query(
+      `DELETE FROM product WHERE product_id = ${id}`
+    );
+
+    return product;
+  } catch (error) {
+    return {
+      error: true,
+      message: `Hemos encontrado un error ${error}`,
+    };
+  } finally {
+    conn.releaseConnection();
+  }
+};
+
 module.exports = {
   getAll,
   getCollections,
   getProductById,
   getProductsByLicence,
   createItem,
+  deleteProduct,
 };

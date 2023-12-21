@@ -46,7 +46,13 @@
             <li>{{licence_name}}</li>
             <li class="cont-btns">
               <a href="/admin/edit/{{product_id}}" class="btn-editar"></a>
-              <a href="/admin/delete/{{product_id}}" class="btn-eliminar"></a>
+              <form
+                action="/admin/delete/{{product_id}}?_method=DELETE"
+                method="post"
+                enctype="application/x-www-form-urlencoded"
+              >
+                <button type="submit" class="btn-eliminar"></button>
+              </form>
             </li>
           </ul>
         </article>
